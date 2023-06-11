@@ -443,6 +443,18 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <fieldset>
+            <legend>Subscribe</legend>
+            <input type="email" placeholder="E-mail" name="email" required />
+            <button class="subscribe-button" type="submit">
+              <span>Subscribe</span>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </fieldset>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -452,6 +464,53 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <fieldset>
+            <legend>Leave your contacts and we will call you back</legend>
+            <label>
+              Name
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              <input
+                class="form-input"
+                type="text"
+                name="username"
+                autofocus
+                required
+              />
+            </label>
+            <label>
+              Phone
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <input class="form-input" type="tel" name="phone" required />
+            </label>
+            <label>
+              Email
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input class="form-input" type="email" name="email" required />
+            </label>
+            <label>
+              Comment
+              <textarea
+                class="form-textarea"
+                name="comment"
+                placeholder="Text input"
+                rows="7"
+              ></textarea>
+            </label>
+            <label>
+              <input type="checkbox" name="check_policy" />
+              I accept the terms and conditions of the
+              <a href="" class="policy-link">Privacy Policy</a>
+            </label>
+          </fieldset>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

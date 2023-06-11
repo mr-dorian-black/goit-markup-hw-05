@@ -604,7 +604,7 @@ img {
 .footer-form fieldset {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   max-width: 453px;
   height: 80px;
   gap: 24px;
@@ -632,6 +632,11 @@ textarea {
   background-color: transparent;
   padding: 8px 16px;
   color: var(--white-color);
+  margin-top: 16px;
+}
+
+.footer-form input:focus-within {
+  outline: none;
 }
 
 .footer-form input::placeholder {
@@ -664,14 +669,13 @@ textarea {
   background-color: var(--button-hover-background);
 }
 
-.footer-form legend {
+.footer-form label {
   display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 
 .modal legend {

@@ -839,8 +839,6 @@ textarea {
 }
 
 .label-policy {
-  display: inline-flex;
-  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -848,8 +846,6 @@ textarea {
 }
 
 .policy-link {
-  display: block;
-  margin-left: 5px;
   color: var(--button-default-background);
 }
 

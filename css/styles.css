@@ -839,7 +839,7 @@ textarea {
 }
 
 .label-policy {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 12px;
   line-height: 1.17;

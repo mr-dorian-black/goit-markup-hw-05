@@ -444,18 +444,16 @@
           </ul>
         </div>
         <form class="footer-form">
-          <fieldset>
-            <label>
-              Subscribe
-              <input type="email" placeholder="E-mail" name="email" required />
-            </label>
-            <button class="subscribe-button" type="submit">
-              <span>Subscribe</span>
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-plane"></use>
-              </svg>
-            </button>
-          </fieldset>
+          <div>
+            <p>Subscribe</p>
+            <input type="email" placeholder="E-mail" name="email" required />
+          </div>
+          <button class="subscribe-button" type="submit">
+            <span>Subscribe</span>
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-plane"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
@@ -467,50 +465,64 @@
           </svg>
         </button>
         <form class="modal-form">
-          <fieldset>
-            <legend>Leave your contacts and we will call you back</legend>
-            <label>
-              Name
-              <svg width="12" height="12">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-              <input
-                class="form-input"
-                type="text"
-                name="username"
-                autofocus
-                required
-              />
-            </label>
-            <label>
-              Phone
-              <svg width="12" height="12">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              <input class="form-input" type="tel" name="phone" required />
-            </label>
-            <label>
-              Email
-              <svg width="12" height="12">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-              <input class="form-input" type="email" name="email" required />
-            </label>
-            <label>
-              Comment
-              <textarea
-                class="form-textarea"
-                name="comment"
-                placeholder="Text input"
-                rows="7"
-              ></textarea>
-            </label>
-            <label>
-              <input type="checkbox" name="check_policy" />
+          <legend>Leave your contacts and we will call you back</legend>
+          <label class="label-input" for="username">Name</label>
+          <div class="form-input-div">
+            <input
+              class="form-input"
+              type="text"
+              name="username"
+              id="username"
+              autofocus
+            />
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="label-input" for="phone">Phone</label>
+          <div class="form-input-div">
+            <input
+              class="form-input"
+              type="tel"
+              name="phone"
+              id="phone"
+            />
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="label-input" for="email">Email</label>
+          <div class="form-input-div">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="label-input" for="comment">Comment</label>
+          <textarea
+            class="form-textarea"
+            name="comment"
+            placeholder="Text input"
+            id="comment"
+          ></textarea>
+          <label class="label-policy">
+            <input
+              type="checkbox"
+              name="check_policy"
+              class="checkbox visually-hidden"
+            />
+            <span class="custom-checkbox">
+              <svg class="icon-check" width="10" height="10">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg></span>
               I accept the terms and conditions of the
-              <a href="" class="policy-link">Privacy Policy</a>
-            </label>
-          </fieldset>
+            <a href="" class="policy-link">Privacy Policy</a>
+          </label>
           <button type="submit" class="submit-btn">Send</button>
         </form>
       </div>

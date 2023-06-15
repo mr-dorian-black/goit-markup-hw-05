@@ -700,15 +700,6 @@ textarea {
   gap: 8px;
 } */
 
-.modal-form label {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
-
 .label-input {
   display: block;
   margin-bottom: 4px;
@@ -839,7 +830,7 @@ textarea {
   border: none;
 }
 
-.modal-form .checkbox:checked + .label-policy .icon-check {
+.modal-form .checkbox:checked + .label-policy .custom-checkbox {
   fill: var(--filter-button-default-background);
 }
 
